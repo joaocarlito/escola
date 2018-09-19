@@ -75,6 +75,11 @@
             </div>
             
             <div>
+                <label>Cpf</label>
+                <input type="text" name="cpf"/>
+            </div>
+            
+            <div>
                 <label>Telefone</label>
                 <input type="text" name="telefone"/>
             </div>
@@ -112,6 +117,7 @@
             <thead>
                 <tr>
                     <th>ID</th>
+                    <th>Cpf</th>
                     <th>Nome</th>
                     <th>Telefone</th>
                     <th>Email</th>
