@@ -58,6 +58,14 @@
                 font-weight: bold;
             }
             
+            .msg-erro
+            {
+                color: red;
+                border: 1px solid salmon;
+                padding: 4px;
+                display: none;
+            }
+            
             
         </style>
         
@@ -68,6 +76,10 @@
         
         <fieldset>
             <legend>Dados do Aluno</legend>
+            
+            <div class="msg-erro">
+                Mensagem de erro
+            </div>
             
             <div>
                 <label>Nome</label>
@@ -92,12 +104,12 @@
             <div>
                 <label>Turma</label>
                 <select name="turma">
-                    <option>-- selecione --</option>
-                    <option> PHP1 </option>
-                    <option> PHP2 </option>
-                    <option> Mysql </option>
-                    <option> AJAX </option>
-                    <option> HTML </option>
+                    <option value="0">-- selecione --</option>
+                    <option value="PHP1"> PHP1 </option>
+                    <option value="PHP2"> PHP2 </option>
+                    <option value="Mysql"> Mysql </option>
+                    <option value="AJAX"> AJAX </option>
+                    <option value="HTML"> HTML </option>
                 </select>
             </div>
             
@@ -126,10 +138,11 @@
                 </tr>
             </thead>
             
-            <tbody>
+            <tbody id="lista">
                 <tr>
                     <td>123</td>
                     <td>João</td>
+                    <td>111.111.111-11
                     <td>41 99999-9999</td>
                     <td>joao@aluno.com</td>
                     <td>AJAX</td>
