@@ -6,6 +6,7 @@
         
         <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
         <script src="js/form.js" type="text/javascript"></script>
+        <script src="js/jquery.mask.js" type="text/javascript"></script>
         
         <style>
             label
@@ -64,6 +65,16 @@
                 border: 1px solid salmon;
                 padding: 4px;
                 display: none;
+            }
+            
+            .input-erro
+            {
+                color: red;
+            }
+            
+            .input-erro input
+            {
+                color: red;
             }
             
             
