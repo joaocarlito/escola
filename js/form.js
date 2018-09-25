@@ -20,6 +20,7 @@ $(function(){
                    '<td>' + $("input[name=email]").val() + '</td>' +
                    '<td>' + $('select').val() + '</td>' +
                    '<td>' + $('input[name=sexo]:checked').val() + '</td>' +
+                   '<td>' + '<a href="# "class="btn-del">[x]' + '</a></td>'+
                    '</tr>';
            $("#lista").append(html);
            $("input[type=text]").val('');
@@ -39,6 +40,11 @@ $(function(){
         }
         
     }); //fim keydown
+     
+        
+    $("#lista").on("click" , '.btn-del' , function(){
+         $(this).parent().parent().remove();
+     }); // fim do on
     
 }); // fim da função
 

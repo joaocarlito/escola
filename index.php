@@ -77,6 +77,11 @@
                 color: red;
             }
             
+            .btn-del
+            {
+                color: red;
+            }
+            
             
         </style>
         
@@ -145,7 +150,8 @@
                     <th>Telefone</th>
                     <th>Email</th>
                     <th>Turma</th>
-                    <th>Sexo</th> 
+                    <th>Sexo</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             
@@ -158,6 +164,7 @@
                     <td>joao@aluno.com</td>
                     <td>AJAX</td>
                     <td>M</td>
+                    <td><a href="#" class="btn-del">[x]</a></td>
                 </tr>
             </tbody>
             
